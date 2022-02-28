@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-hero {
+  height: calc(100vh - 55px);
+}
+.line-with-dots {
+  /* border: 2px solid blue; */
+  height: 90%;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  /* border: 2px solid blue; */
+}
+
+.line-with-dots::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: rgb(230, 230, 230);
+  top: 0;
+  left: 0;
+}
+
+.exp-card {
+  max-width: 400px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid orange;
+  position: relative;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+.exp-card::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  top: -9px;
+  left: -40px;
+  z-index: 11;
+}
+
+.smooth {
+  transition: all 250ms linear;
+}
