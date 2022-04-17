@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Skills from "../components/skills";
 import Testimonial from "../components/Testimonial";
+import Projects from "../components/projects";
+import About from "../components/About";
+import Contact from '../components/Contact/Index.jsx'
 
 export default function Home() {
   return (
@@ -12,7 +15,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Skills />
-      <Services />
+      <Projects />
+      <About />
+      <Contact />
+      {/* <Services /> */}
       {/* <Testimonial /> */}
     </div>
   );
