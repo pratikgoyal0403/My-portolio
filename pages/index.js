@@ -7,19 +7,24 @@ import Skills from "../components/skills";
 import Testimonial from "../components/Testimonial";
 import Projects from "../components/projects";
 import About from "../components/About";
-import Contact from '../components/Contact/Index.jsx'
+import Contact from "../components/Contact/Index.jsx";
+import Container from "../components/Container/Container";
+import Experiences from "../components/Experiences/Experiences";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
-      {/* <Services /> */}
-      {/* <Testimonial /> */}
-    </div>
+      <Container>
+        <Hero />
+        <Skills />
+        {/* <Experiences /> */}
+        <Projects />
+        <About />
+        <Contact />
+        {/* <Services /> */}
+        {/* <Testimonial /> */}
+      </Container>
+    </>
   );
 }

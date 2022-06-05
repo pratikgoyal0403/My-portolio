@@ -13,7 +13,7 @@ const fromRight = {
 };
 export default function Projects() {
   return (
-    <div className="w-10/12 mx-auto">
+    <div className=" mx-auto">
       <Heading title="PROJECTS" />
       <div className="">
         <motion.div

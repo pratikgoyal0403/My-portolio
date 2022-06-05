@@ -21,18 +21,18 @@ const chipVariant = {
   // end: { opacity: 0, x: 100 },
 };
 
-const frontEndSkills = ["Javascript", "Sass", "React", "Redux", "Next.js"];
+const frontEndSkills = ["Javascript", "Sass", "React", "Redux", "Next.js", "HTML", "CSS"];
 const backendSkills = ["Node.js", "MongoDB", "MySQL", "REST API", "Express"];
 const tools = ["Git & Github", "Typescript", "Yarn", "Visual Studio Code"];
 
 export default function Skills() {
   return (
-    <div className="w-10/12 mx-auto">
+    <div className=" mx-auto">
       <Heading title="Skills" />
       <div>
-        <div className="grid grid-cols-3 gap-10 my-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-20 ">
           <motion.div
-            className="flex items-center justify-center "
+            className="flex items-center justify-center"
             initial="start"
             animate="end"
             variants={skillVariant}

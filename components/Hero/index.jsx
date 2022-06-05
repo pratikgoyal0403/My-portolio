@@ -19,9 +19,9 @@ const alternateContainerVariants = {
 
 export default function Hero() {
   return (
-    <div className="grid  grid-cols-1 h-hero sm:grid-cols-2   ">
+    <div className="grid grid-cols-1 h-hero sm:grid-cols-2 ">
       <motion.div
-        className="flex items-center justify-center flex-col order-2 sm:order-1 sm:items-end "
+        className="flex items-center justify-center flex-col order-2 "
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -37,7 +37,7 @@ export default function Hero() {
             default: { duration: 1.5 },
           }}
         ></motion.div> */}
-        <div className="w-3/4">
+        <div className="md:w-3/4 ">
           <p className="text-2xl sm:text-4xl text-slate-600 mb-2">
             Welcome I{"'"}m
           </p>
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
       </motion.div>
       <motion.div
-        className="flex items-center justify-center order-1 sm:order-2 sm:justify-end "
+        className="flex items-center justify-center order-1 sm:order-2"
         variants={alternateContainerVariants}
         initial="hidden"
         animate="visible"
@@ -70,7 +70,7 @@ export default function Hero() {
             default: { duration: 1.5 },
           }}
         ></motion.div> */}
-        <img src="/images/hero.png" alt="hero image" className="w-10/12" />
+        <img src="/images/hero.png" alt="hero image" className="w-10/12 " />
       </motion.div>
     </div>
   );

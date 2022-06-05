@@ -4,11 +4,11 @@ export default function ProjectCard({ className }) {
   return (
     <div
       className={
-        "w-full px-3 py-6 bg-light-grey my-10 flex rounded-md shadow-lg " +
+        "w-full px-1 md:px-3 py-6 bg-light-grey my-10 grid grid-cols-1 md:grid-cols-5  rounded-md shadow-lg " +
         className
       }
     >
-      <div className="px-5">
+      <div className="px-5 md:col-span-3 order-2 md:order-1">
         <h1 className="font-medium text-lg mt-2 mb-1">Financial Portal</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa,
@@ -18,15 +18,15 @@ export default function ProjectCard({ className }) {
           aut tempora ea.
         </p>
         <h1 className="font-medium text-lg mt-2 mb-1">Skills</h1>
-        <div className="flex ">
+        <div className="flex flex-wrap">
           <ProjectSkills />
           <ProjectSkills />
           <ProjectSkills />
           <ProjectSkills />
         </div>
       </div>
-      <div></div>
-      <div className="border-2 flex justify-center ">
+      {/* <div></div> */}
+      <div className=" flex justify-center md:col-span-2 order-1 md:order-2">
         <img src="/images/hero.png" alt="hero image" className="w-1/3" />
       </div>
     </div>

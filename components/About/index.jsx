@@ -2,10 +2,11 @@ import Heading from "../commons/Heading";
 
 export default function About() {
   return (
-    <div className="w-10/12 mx-auto my-4">
+    <div className="mx-auto my-4">
       <Heading title="ABOUT ME" />
-      <div className="mt-4 flex items-stretch justify-center">
-        <div className="flex-1  text-xl text-dark-grey">
+      {/* flex items-stretch justify-center */}
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-2">
+        <div className="text-xl text-dark-grey order-2 md:order-1">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
             temporibus voluptas aut doloremque, autem sunt vero cupiditate
@@ -27,8 +28,8 @@ export default function About() {
             cupiditate asperiores ullam.
           </p>
         </div>
-        <div className="flex-1 ">
-          <img src="/images/developer.png" alt="developer" className="w-4/5" />
+        <div className="order-1 md:order-2">
+          <img src="/images/developer.png" alt="developer" className="w-5/6 mx-auto" />
         </div>
       </div>
     </div>
